@@ -25,7 +25,7 @@ body,html{
     user-select: none;
 }
 .MenuTab{
-    width: 45%;
+    width: 50%;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -67,6 +67,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 20%;
 }
 /* .profileImgDiv{
     width: 30%;
