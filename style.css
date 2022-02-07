@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.attribution {
+     font-size: 11px; text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: Kumbh Sans;
+    font-size: 16px ;
+}
+.MotherContainer{
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.MainMenuContainer{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    user-select: none;
+}
+.MenuTab{
+    width: 45%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.SliderMenuTab{
+    position: relative;
+}
+.slider{
+    background-color: hsl(26, 100%, 55%);
+    height: 3px;
+    transition: all 0.4s ease-in;
+    display: none;
+}
+.MobileMenu{
+    display: none;
+}
+.overLayMenu{
+    display: none;
+}
+.wedName{
+   color:  hsl(0, 0%, 0%);
+   opacity: 0.75;
+   user-select: none;
+}
+ul{
+    margin: 10;
+    padding: 0;
+}
+.liTag{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+    user-select: none;
+    color:hsl(220, 14%, 75%)
+}
+
+.CartAndProfile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .profileImgDiv{
+    width: 30%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+
+} */
+.profileImg{
+    width: 30%;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.profileImg:hover{
+    border-radius: 30px;
+    border: solid  1px hsl(26, 100%, 55%);
+}
+.CartMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.CustomerBuy{
+    display: none;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 20px;
+    width: 70%;
+    text-align: center;
+    user-select: none;
+}
+
+.showCustomerBuy{
+    display: block;
+}
+
+.Cart{
+    width: 100%;
+    cursor: pointer;
+}
+.MenuUnderline, .EmptyDiv{
+    height: 1px;
+    background-color: hsl(220, 14%, 75%);
+}
+.CartComeAddDiv{
+    /* display: flex;
+    justify-content: end; */
+    position: absolute;
+    right: 10%;
+    top: 90%;
+    width: 30%;
+    height: 300px;
+    /* border: solid 1px hsl(220, 14%, 75%); */
+    border-radius: 10px;
+    border: hsl(0, 0%, 100%) 1px solid;
+    background-color:   hsl(220, 14%, 75%);
+    display: none;
+}
+.CartInsideMainDiv{
+    height: 290px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    border: hsl(0, 0%, 100%) 1px solid;
+}
+.EmptyTextDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.CartDataDiv{
+    display: flex;
+    justify-content: space-around;
+    margin: 10% 0%;  
+}
+.CartDataImg{
+    width: 10%;
+}
+
+.CheckOutButtom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    text-align: center;
+    width: 70%;
+    margin: 0% 15%;
+    background-color:hsl(26, 100%, 55%);
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+.fa-trash-alt{
+    cursor: pointer;
+    user-select: none;
+    font-size: 100%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.TotleAmount{
+    font-weight: 800;
+    font-size: 20px;
+}
+.PriceAndQuantity{
+    display: flex
+}
+
+.BodyContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+.LeftSide{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.FirstColum{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LeftMainImg{
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.SecondColum{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    height: 15%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.Secondimg{
+    border-radius: 10px;
+    width: 18%;
+    cursor: pointer;
+}
+.firstImage{
+    border:solid 3px hsl(26, 100%, 55%);
+}
+.Secondimg:hover{
+    opacity: 0.6;
+}
+
+.RightSide{
+    margin-top: 50px;
+    width: 50%;
+    padding-right:14%;
+    font-size: 20px;
+    /* background-color: chocolate; */
+}
+.AddHead{
+    display: inline-block;
+}
+.companyName{
+    margin-top: 40px;
+    color:hsl(26, 100%, 55%);
+}
+.RightHead{
+    font-size: 50px;
+    margin-top: -20px;
+}
+/* .RightParagraph{
+    /* font-size: 20px; 
+} */
+
+/* .PriceAndPercentage{
+
+} */
+.Price{
+   
+    font-weight: 1000;
+   
+}
+.pp{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.Percentage{
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 10%;
+    text-align: center;
+}
+.BeforePrice{
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+    margin-bottom: 30px;
+    display: block;
+}
+.AmountAndButtom{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+.Amount{
+    width: 35%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    background-color:  hsl(223, 64%, 98%);
+}
+.Minus,.Plus{
+    cursor: pointer;
+}
+
+
+.Count{
+   font-size: 20px;
+   font-weight: 900;
+   user-select: none;
+}
+.Buttom{
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    color: white;
+    cursor: pointer;
+}
+.Buttomspan{
+    font-size: 15px;
+}
+
+.OverLayImageDisplay{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    opacity: 0.8;
+    display: none;
+}
+
+.overlayImgMainDiv{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.overlayImgMainSecondDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overLayImage{
+    position: absolute;
+}
+/* .previous{
+    background-color: white;
+    border-radius: 30px;
+} */
+
+
+.PreviousAndNext{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+
+}
+.OverImg{
+    width: 30%;
+    margin: 0% 10%;
+
+}
+.CloseButtonDiv{
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+.CloseButtonDiv:hover{
+    color:hsl(26, 100%, 55%);
+}
+.showOverLayImageDisplay,.showoverlayImgMainDiv{
+    display: block;
+}
+.CloseOnlyDiv{
+    display: flex;
+    justify-content: end;
+}
+.MobilePreviousAndNext{
+    display: none;
+}
+@media (max-width: 475px) {
+    .MainMenuContainer{
+        height: 60px;
+    }
+    .UlMenu{
+        display: none;
+    }
+    .MobileMenu{
+        display: inline-block;
+        width: 20%;
+        cursor: pointer;
+    }
+    .slider{
+        display: none;
+    }
+    .overLayMenu{
+        position: absolute;
+        background-color: white;
+        display: none;
+        width: 55%;
+        height: 100vh;
+        left: 0;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        /* background-color: yellow; */
+    }
+    .ShowOverLayMenu{
+        display: block;
+    }
+    .OverUl{
+        width: 100%;
+        height: 50%;
+    }
+    .OverLi{
+       list-style: none;
+       left: 2px;
+       font-size: 20px;
+       margin: 20px 0px;
+       padding: 10px 20px;
+       font-weight: 700;
+       cursor: pointer;
+       user-select: none;
+       transition: transform 1s ease-in;
+    }
+    .overLayClose{
+        margin: 10% 10%;
+        cursor: pointer;
+    }
+    .OverLi:hover{
+        color: lightslategrey;
+        border-bottom: solid 1px black;
+    }
+    .CartComeAddDiv{
+        position: absolute;
+        width: 80%;
+    }
+    .BodyContainer{
+        display: block;
+        margin: 0 auto;
+    }
+    .LeftSide{
+        width: 100%;
+        display: block;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
+    .FirstColum{
+     
+        margin: 0 0;
+        width: 100%;
+    }
+    .LeftMainImg{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .mobilePreviousAndNext{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .MobilePreviousAndNext{
+        display: block;
+        cursor: pointer;
+        user-select: none;
+        font-size: 30px;
+        color: white;
+    }
+    
+    .SecondColum{
+        display: none;
+    }
+    .RightSide{
+        width: 85%;
+        padding: 0% 5%;
+        margin-top: 0px;
+    }
+    .companyName{
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    .RightHead{
+        font-size: 30px;
+    }
+    .RightParagraph{
+        font-size: 17px;
+    }
+    .BeforePrice{
+       margin-top: 35px;
+    }
+    .PriceAndPercentage{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .AmountAndButtom{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 120px;
+        margin: 0 0;
+    }
+    .Amount{
+        width: 100%;
+        height: 45%;
+        margin-bottom: 5%;
+    }
+    .Count{
+        font-size: 20px;
+    }
+    .Buttom{
+        width: 100%;
+        height: 45%;
+    }
+    }
